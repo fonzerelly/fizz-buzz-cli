@@ -9,17 +9,10 @@ const toBuzz = (num) => {
 const fizzbuzz = (num) => {
     const fizz = toFizz(num)
     const buzz = toBuzz(num)
+    const result = fizz + buzz 
 
-    if (fizz && buzz ) {
-        return fizz + buzz
-    }
-
-    if (fizz) {
-        return fizz
-    }
-
-    if (buzz) {
-        return buzz
+    if (result ) {
+        return result
     }
 
     return String(num)
