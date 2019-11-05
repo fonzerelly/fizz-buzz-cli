@@ -16,4 +16,15 @@ describe('fizzbuzz', () => {
         expect(fizzbuzz(6)).toBe("fizz")
     })
 
+    it('should convert 5 to "buzz"', () => {
+        expect(fizzbuzz(5)).toBe("buzz")
+    })
+
+    it('should convert also 10 to "buzz"', () => {
+        expect(fizzbuzz(10)).toBe("buzz")
+    })
+
+    it('should convert muliples of 3 and 5 to "fizzbuzz"', () => {
+        expect(fizzbuzz(3 * 5)).toBe("fizzbuzz")
+    })
 })
