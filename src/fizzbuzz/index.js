@@ -7,16 +7,17 @@ const toBuzz = (num) => {
 }
 
 const fizzbuzz = (num) => {
-    if (num % 3 === 0 && num % 5 === 0 ) {
-        return 'fizzbuzz'
+    const fizz = toFizz(num)
+    const buzz = toBuzz(num)
+
+    if (fizz && buzz ) {
+        return fizz + buzz
     }
 
-    const fizz = toFizz(num)
     if (fizz) {
         return fizz
     }
 
-    const buzz = toBuzz(num)
     if (buzz) {
         return buzz
     }
