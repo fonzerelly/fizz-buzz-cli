@@ -24,7 +24,8 @@ describe('fizzbuzz', () => {
         expect(fizzbuzz(10)).toBe("buzz")
     })
 
-    it('should convert muliples of 3 and 5 to "fizzbuzz"', () => {
+    it('should convert multiples of 3 and 5 to "fizzbuzz"', () => {
         expect(fizzbuzz(3 * 5)).toBe("fizzbuzz")
     })
+    
 })
