@@ -6,7 +6,8 @@ const cli = ({process, modify}) => {
         .map((index) => index + 1)
     const modifyFn = modify || id
     range
-        .map(modifyFn) 
+        .map(modifyFn)
+        .map((str) => `${str} `)
         .forEach((num) => {
             process.stdout.write(num)
         })

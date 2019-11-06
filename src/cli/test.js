@@ -23,7 +23,7 @@ describe('cli', () => {
 
     it('should call write with the numbers from 1-10', () => {
         cli({process: mockProcess})
-        expect(mockProcess.stdout.write.mock.calls.map((params) => params[0])).toEqual([1,2,3,4,5,6,7,8,9,10])
+        expect(mockProcess.stdout.write.mock.calls.map((params) => params[0])).toEqual(['1 ','2 ','3 ','4 ','5 ','6 ','7 ','8 ','9 ','10 '])
     })
 
     it('should call a modify-function with each value and write the transformation', () => {
