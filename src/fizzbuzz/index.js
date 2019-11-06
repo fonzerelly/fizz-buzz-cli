@@ -1,16 +1,17 @@
-const toFizz = (num) => {
-    return (num % 3 === 0) ? 'fizz' : '' 
+const createToXXzz = (divisor, replacement) => {
+    return (num) => {
+        return (num % divisor === 0) ? replacement : ''
+    }
 }
 
-const toBuzz = (num) => {
-    return (num % 5 === 0) ? 'buzz' : '' 
-}
+const toFizz = createToXXzz(3, 'fizz')
+
+const toBuzz = createToXXzz(5, 'buzz')
+
+const toZuzz = createToXXzz(7, 'zuzz')
 
 const fizzbuzz = (num) => {
-    const fizz = toFizz(num)
-    const buzz = toBuzz(num)
-    const result = fizz + buzz 
-
+    const result = `${toFizz(num)}${toBuzz(num)}${toZuzz(num)}`
     if (result ) {
         return result
     }

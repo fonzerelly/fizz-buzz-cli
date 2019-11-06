@@ -28,4 +28,16 @@ describe('fizzbuzz', () => {
         expect(fizzbuzz(3 * 5)).toBe("fizzbuzz")
     })
     
+    it('should convert multiples of 7 to "fuzz"', () => {
+        expect(fizzbuzz(7)).toBe('zuzz')
+    })
+
+    it('should convert multiples of 3 and 7 to "fizzzuzz', () => {
+        expect(fizzbuzz(3*7)).toBe('fizzzuzz')
+    })
+
+    it('should convert multiples of 3, 5 and 7 to "fizzbuzzzuzz', () => {
+        expect(fizzbuzz(3*5*7)).toBe('fizzbuzzzuzz')
+    })
+
 })
